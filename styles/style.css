@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-image: url(../images/paper.png);
+}
+
+.main{
+    max-width: 965px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:wrap;
+}
+
+
+main .tittles h2,
+p{
+    text-align: center;
+}
+
+main .tittles p{
+    font-style: italic;
+    color: red;
+}
+
+main .options button{
+    height: 50px;
+    border-radius: 12px;
+    border-width: 0;
+    width: 100px;
+}
+
+.options{
+    margin: 20px 0;
+}
+
+.resetting{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+footer a{
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+}
+
+

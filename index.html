@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+
+    <main>
+        <div class="tittles">
+            <h2>Rock Paper Scissors</h2>
+            <p>choose your move</p>
+        </div>
+
+        <div class="options">
+        <button 
+        class="rock"
+
+        onclick="
+        computerMove();
+        personsMove('rock');
+        compareMoves();
+        ">
+            Rock
+        </button>          
+        
+        <button 
+        class="paper"
+
+        onclick="
+        computerMove();
+        personsMove('paper');
+        compareMoves();
+        "
+        >
+            Paper
+        </button>
+
+        <button 
+        class="scissors"
+        
+        onclick="
+        computerMove();
+        personsMove('scissors');
+        compareMoves();
+        "
+        >
+            Scissors
+        </button>
+<!-- <br> -->
+            <div class="resetting">
+                <button class="reset" 
+                onclick="
+
+                resetScores();
+                
+                ">
+                    Reset Scores
+                </button>
+            </div>
+        
+        </div>
+
+
+        <footer>
+            <p>
+                <a href="www.michaelsinkamba.com"> Michael Sinkamba               
+                </a>
+            </p>
+        </footer>
+    </main>
+
+    
+
+    <script>
+        const product1 = {
+            name : 'shirt',
+            rating:  {
+                stars : 4.5,
+                'number of people' : 87
+
+            },
+            adds : function fun1(){
+                console.log('a function inside an object');
+            }
+        }
+
+        // const jsonObject = JSON.stringify(product1);
+
+        // const jObject = JSON.parse(jsonObject);
+
+        // console.log(jsonObject);
+
+        // console.log(jObject);
+
+    </script>
+
+    
+</body>
+</html>
