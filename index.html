@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="scripts/script.js"></script>
+<!--     <script src="scripts/script.js"></script> -->
 </head>
 <body>
 
@@ -73,20 +73,14 @@
         </footer>
     </main>
 
-    
 
-    <script>
-     
-// lets record scores
+    <!-- 
+        https://youtu.be/OYRkIGaP80M
+     -->
 
+     <script>
 
-
-
-const resultScores = localStorage.getItem('scores');
-
-const scores = JSON.parse(resultScores);
-
-
+        
 // function reset scores
 function resetScores(){
         scores.wins = 0;
@@ -98,8 +92,22 @@ function resetScores(){
     );
 
     localStorage.removeItem(scores);
-
 }
+
+
+let resultScores = localStorage.getItem('scores');
+
+let scores = JSON.parse(resultScores);
+
+if(scores === null) {
+    scores = {
+        wins : 0,
+        looses : 0,
+        ties : 0
+    }
+}
+
+
 
 
 let finalComputerMove = '';
@@ -170,9 +178,7 @@ function compareMoves(){
 
 }
 
-
-    </script>
-
-    
+     </script>
+   
 </body>
 </html>
